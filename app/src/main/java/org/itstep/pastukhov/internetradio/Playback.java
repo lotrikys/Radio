@@ -35,8 +35,6 @@ public class Playback {
 
         Uri stream = Uri.parse("http://online-radioroks.tavrmedia.ua/RadioROKS");
 
-//        Handler mainHandler = new Handler();
-
         TrackSelector trackSelector =
                 new DefaultTrackSelector();
 
@@ -56,8 +54,6 @@ public class Playback {
 
         player.prepare(audioSource);
         player.setPlayWhenReady(true);
-
-        Log.d ("Buffer", "Buffer: " + player.getBufferedPercentage() + "%");
 
     }
 
